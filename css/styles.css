@@ -3,20 +3,19 @@ body {
     font-family: 'Montserrat', sans-serif; 
     /* font-family: 'Zilla Slab', serif; */
     font-weight: 300;
-    background-color: #F2D8D5;
+   
     /* max-width: 1000px; */
     /* display: flex;
     flex-direction: column; */
     margin: 0px auto;
-    padding: 20px;
-   
 }
 
 header {
-    margin: 50px auto 10px auto;
-    max-width: 400px;
-    position: relative;
-    right: 300px;
+    /* padding: 20px auto 10px auto; */
+    /* max-width: 400px;
+    position: relative; */
+    height: 100px;
+    background-color: #F2D8D5;
 } 
 
 /* .logo-letters {
@@ -59,8 +58,8 @@ h1 {
 
 .h1-lighter {
     font-weight: 200;
-    /* text-decoration: underline;
-    text-decoration-color: yellow; */
+    text-decoration: underline;
+    text-decoration-color: yellow;
 }
 
 .blue {
@@ -74,11 +73,14 @@ main {
 
 
 /* section-introduction*/
+.section-introduction {
+    background-color: #F2D8D5;
+}
+
 .intro {grid-area: intro;}
 .intro-img {grid-area: img;}
 
-.section-introduction {
-    
+.section-introduction-content {
     height: 100vh;
     max-width: 1000px;
     display: grid;
@@ -103,26 +105,82 @@ main {
     height: 800px;
     width: 600px;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
 }
 
 
 /* section-projects*/
 .section-projects {
-    /* height: 100vh; */
-    max-width: 1000px;
     display: flex;
     flex-direction: column;
 }
 
+.section-projects-content {
+    max-width: fit-content;
+    background-color: white;
+    grid-template-areas: 
+    'img1 text1'
+    'text2 img2'
+    'img3 text3';
+    grid-gap: 0px;
+    margin: 60px auto;
+}
+
+.section-projects-img1 {grid-area: img1;}
+.section-projects-img2 {grid-area: img2;}
+.section-projects-img3 {grid-area: img3;}
+.section-projects-text1 {grid-area: text1;}
+.section-projects-text2 {grid-area: text2;}
+.section-projects-text3 {grid-area: text3;}
+
 .project-1, 
-.rpject-2,
+.project-2,
 .project-3 {
     display: flex;
     flex-direction: row;
     height: 600px;
     margin: 20px auto;
+    align-items: center;
 }
 
-.project-1 {
-    height: 600px;
+.section-projects img {
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+    margin: 0px 20px;
 }
+
+.section-projects-text1,
+.section-projects-text2,
+.section-projects-text3 {
+    max-width: 300px;
+}
+
+.section-projects h1 {
+    color: #3D7D8B;
+    font-size: 2.5rem ;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.view {
+    text-decoration: none;
+    color: #F2A7A7;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
