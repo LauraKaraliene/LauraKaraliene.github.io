@@ -1,0 +1,128 @@
+body {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif; 
+    /* font-family: 'Zilla Slab', serif; */
+    font-weight: 300;
+    background-color: #F2D8D5;
+    /* max-width: 1000px; */
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0px auto;
+    padding: 20px;
+   
+}
+
+header {
+    margin: 50px auto 10px auto;
+    max-width: 400px;
+    position: relative;
+    right: 300px;
+} 
+
+/* .logo-letters {
+    font-weight: bold;
+    font-size: 1.3rem;
+    align-items: end;
+} */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    color: #BF5687;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    /* font-family: 'Montserrat', sans-serif;  */
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Karla', sans-serif; */
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: end;
+}
+
+.h1-lighter {
+    font-weight: 200;
+    /* text-decoration: underline;
+    text-decoration-color: yellow; */
+}
+
+.blue {
+    color: #60AEBF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* section-introduction*/
+.intro {grid-area: intro;}
+.intro-img {grid-area: img;}
+
+.section-introduction {
+    
+    height: 100vh;
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas: 
+    'intro img';
+    grid-gap: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 20px;
+    align-items: flex-end;
+}
+
+.intro p, h1 {
+    text-align: end;
+}
+
+.intro-img {
+    height: 800px;
+    width: 600px;
+    background-color: white;
+}
+
+
+/* section-projects*/
+.section-projects {
+    /* height: 100vh; */
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-1, 
+.rpject-2,
+.project-3 {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    margin: 20px auto;
+}
+
+.project-1 {
+    height: 600px;
+}
