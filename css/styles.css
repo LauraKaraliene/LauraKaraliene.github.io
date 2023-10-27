@@ -110,7 +110,6 @@ main {
 .section-introduction-content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* height: calc(100% - 70px);  */
     padding-top: 1rem;
     padding-bottom: 1rem; 
     padding-top: 2rem; 
@@ -203,6 +202,11 @@ main {
     text-align: right;
 }
 
+.projects-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 .view {
     text-decoration: none;
     /* color: #F2A7A7; */
@@ -224,4 +228,33 @@ footer {
     text-align: center;
 }
 
+
+@media screen and (max-width: 1100px) {
+    .section-projects img {
+        max-width: 500px;
+        height: auto;
+    }
+    .project-1, 
+.project-2,
+.project-3 {
+    height: 400px;
+}
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+   
+     .section-projects-content {
+        grid-template-areas: 
+        'img1'
+        'text1'
+        'img2'
+        'text2'
+        'img3'
+        'text3'; 
+        grid-gap: 10px;
+     }
+    } 
 
